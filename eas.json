@@ -1,0 +1,41 @@
+{
+  "cli": {
+    "version": ">= 3.6.0",
+
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      }
+    },
+    "production": {
+      "env": {
+        "WEATHER_OPEN_API_KEY": "e79f8329ee89dc43dae90c1808a0e95c",
+        "WEATHER_OPEN_URL": "https://api.openweathermap.org/data/2.5/weather?lang=pt_br&units=metric&",
+      },
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "autoIncrement": true
+    },
+    "staging": {
+      "env": {
+        "WEATHER_OPEN_API_KEY": "e79f8329ee89dc43dae90c1808a0e95c",
+        "WEATHER_OPEN_URL": "https://api.openweathermap.org/data/2.5/weather?lang=pt_br&units=metric&",
+      }
+    },
+  },
+  "submit": {
+    "production": {}
+  }
+}

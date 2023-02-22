@@ -2,12 +2,12 @@
   "expo": {
     "name": "wheaterApp",
     "slug": "wheaterApp",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/logo2.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash_screen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,12 +22,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo3.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.mister4ssis.wheaterApp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo3.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "59a7d70c-10a1-47f5-a6ce-07d66f513113"
+      }
     }
   }
 }
